@@ -1,5 +1,5 @@
 <script>
-
+  
   import AppHeader from './components/Header/AppHeader.vue';
 
   export default{
@@ -16,7 +16,7 @@
 
 <style lang="scss">
 
-/*   @use './style/generic' as *;
-  @use './style/partials/variables' as *; */
+  @use './style/generic' as *;
+
 
 </style>
