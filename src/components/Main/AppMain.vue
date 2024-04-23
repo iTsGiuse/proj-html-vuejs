@@ -3,6 +3,7 @@
     import InEvidenza from './InEvidenza.vue';
     import ProssimiEventi from './ProssimiEventi.vue';
     import ProssimiEventiCarosello from './ProssimiEventiCarosello.vue';
+    import Banner from './Banner.vue';
 
     export default {
         name: 'AppMain',
@@ -11,6 +12,7 @@
             InEvidenza,
             ProssimiEventi,
             ProssimiEventiCarosello,
+            Banner,
         }
     }
 
@@ -21,6 +23,7 @@
     <InEvidenza></InEvidenza>
     <ProssimiEventi></ProssimiEventi>
     <ProssimiEventiCarosello></ProssimiEventiCarosello>
+    <Banner></Banner>
 
 </template>
 
