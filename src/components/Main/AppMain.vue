@@ -1,12 +1,14 @@
 <script>
 
     import InEvidenza from './InEvidenza.vue';
+    import ProssimiEventi from './ProssimiEventi.vue';
 
     export default {
         name: 'AppMain',
 
         components:{
             InEvidenza,
+            ProssimiEventi,
         }
     }
 
@@ -15,6 +17,7 @@
 <template>
 
     <InEvidenza></InEvidenza>
+    <ProssimiEventi></ProssimiEventi>
 
 </template>
 

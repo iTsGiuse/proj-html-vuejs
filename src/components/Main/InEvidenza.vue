@@ -14,7 +14,7 @@
                 <div class="col-3">
                     <div class="card">
                         <img src="../../assets/img/healthy-foods.webp" class="card-img-top" alt="...">
-                        <span class="ms-tag-standard ps-3 pe-3">Food</span>
+                        <span class="ms-tag-standard ms-tag-center ps-3 pe-3">Food</span>
                         <button class="ms-btn back ps-2 pe-2"><i class="fa-solid fa-chevron-left"></i></button>
                         <div class="card-body">
                             <h5 class="card-title text-center">The Best Healthy Foods in 2022</h5>
@@ -25,7 +25,7 @@
                 <div class="col-3">
                     <div class="card">
                         <img src="../../assets/img/winter.webp" class="card-img-top" alt="...">
-                        <span class="ms-tag-standard ps-3 pe-3">Fashion</span>
+                        <span class="ms-tag-standard ms-tag-center ps-3 pe-3">Fashion</span>
                         <div class="card-body">
                             <h5 class="card-title text-center">The Best Healthy Foods in 2022</h5>
                             <p class="card-text text-center text-secondary">December 26, 2022</p>
@@ -35,7 +35,7 @@
                 <div class="col-3">
                     <div class="card">
                         <img src="../../assets/img/photographers-mistakes.webp" class="card-img-top" alt="...">
-                        <span class="ms-tag-standard ps-3 pe-3">Fashion</span>
+                        <span class="ms-tag-standard ms-tag-center ps-3 pe-3">Fashion</span>
                         <div class="card-body">
                             <h5 class="card-title text-center">The Best Healthy Foods in 2022</h5>
                             <p class="card-text text-center text-secondary">December 26, 2022</p>
@@ -45,8 +45,8 @@
                 <div class="col-3">
                     <div class="card">
                         <img src="../../assets/img/ideas-anime.webp" class="card-img-top" alt="...">
-                        <span class="ms-first-tag ps-3 pe-3">Culture</span>
-                        <span class="ms-second-tag ps-3 pe-3">Stories</span>
+                        <span class="ms-tag-standard ms-first-tag ps-3 pe-3">Culture</span>
+                        <span class="ms-tag-standard ms-second-tag ps-3 pe-3">Stories</span>
                         <button class="ms-btn next ps-2 pe-2"><i class="fa-solid fa-angle-right"></i></button>
                         <div class="card-body">
                             <h5 class="card-title text-center">The Best Healthy Foods in 2022</h5>
@@ -69,7 +69,6 @@
 
         .card-image-top{
             position: relative;
-
         }
 
         .ms-tag-standard{
@@ -77,6 +76,9 @@
             border-radius: 10px;
             background-color: $main-color-white;
             position: absolute;
+            
+        }
+        .ms-tag-center{
             z-index: 1;
             top: 5%;
             left: 50%;
@@ -84,10 +86,6 @@
         }
 
         .ms-first-tag{
-            border: 1px solid transparent;
-            border-radius: 10px;
-            background-color: $main-color-white;
-            position: absolute;
             z-index: 1;
             top: 5%;
             left: 60%;
@@ -95,10 +93,6 @@
         }
 
         .ms-second-tag{
-            border: 1px solid transparent;
-            border-radius: 10px;
-            background-color: $main-color-white;
-            position: absolute;
             z-index: 1;
             top: 5%;
             left: 40%;
