@@ -4,6 +4,7 @@
     import ProssimiEventi from './ProssimiEventi.vue';
     import ProssimiEventiCarosello from './ProssimiEventiCarosello.vue';
     import Banner from './Banner.vue';
+    import FeaturedPosts from './FeaturedPosts.vue';
 
     export default {
         name: 'AppMain',
@@ -13,6 +14,7 @@
             ProssimiEventi,
             ProssimiEventiCarosello,
             Banner,
+            FeaturedPosts,
         }
     }
 
@@ -24,6 +26,7 @@
     <ProssimiEventi></ProssimiEventi>
     <ProssimiEventiCarosello></ProssimiEventiCarosello>
     <Banner></Banner>
+    <FeaturedPosts></FeaturedPosts>
 
 </template>
 
