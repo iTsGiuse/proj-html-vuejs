@@ -107,6 +107,7 @@
             z-index: 1;
             font-size: 20px;
             color: $main-color-red;
+            background-color: $main-color-white;
         }
 
         .next{

@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="row flex-column border-bottom">
+                    <div class="row border-bottom">
                         <div class="card mb-4">
                             <div class="row g-0">
                                 <div class="col-4">
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row flex-column border-bottom mt-3">
+                    <div class="row border-bottom mt-3">
                         <div class="card mb-4">
                             <div class="row g-0">
                                 <div class="col-4">
@@ -74,7 +74,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row flex-column mt-3">
+                    <div class="row mt-3">
                         <div class="card mb-4">
                             <div class="row g-0">
                                 <div class="col-4">
@@ -105,6 +105,7 @@
     @use '../../style/partials/variables' as *;
 
     #prossimi-eventi-carosello{
+
         .filter{
             border: 1px solid transparent;
             border-radius: 10px;
@@ -113,15 +114,19 @@
         }
 
         .card{
+            height: 100% !important;
             border: 1px solid transparent !important;
 
             .card-img, .img-fluid{
                 position: relative;
-
+            }
+            .card-img{
+                height: 368px;
+                object-fit: fill;
             }
 
             .card-img-overlay{
-                top: 85% !important;
+                top: 75% !important;
                 left: 1% !important;
             }  
 
