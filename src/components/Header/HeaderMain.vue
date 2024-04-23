@@ -9,7 +9,7 @@
 
 <template>
     <section id="header-main">
-        <div class="container mt-2">
+        <div class="container mt-2 mb-2">
             <div class="row align-items-center">
                 <div class="col">
                     <img src="../../assets/img/anime-logo-300x89.webp" alt="Logo">
@@ -23,16 +23,6 @@
 </template>
 
 <style scoped lang="scss">
-
-    #header-main{
-        height: 150px;
-
-        .col{
-            max-width: 100%;
-            max-height: 100%;
-
-        }
-    }
 
     #header-main .row > .col:last-child img {
         width: 90% !important;

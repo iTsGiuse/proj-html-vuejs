@@ -2,13 +2,15 @@
 
     import HeaderTop from './HeaderTop.vue';
     import HeaderMain from './HeaderMain.vue';
+    import HeaderFooter from './HeaderFooter.vue';
 
     export default {
         name: 'AppHeader',
 
         components: {
             HeaderTop,
-            HeaderMain
+            HeaderMain,
+            HeaderFooter
         }
     }
 
@@ -18,13 +20,14 @@
     <header>
         <HeaderTop></HeaderTop>
         <HeaderMain></HeaderMain>
+        <HeaderFooter></HeaderFooter>
     </header>   
 </template>
 
 <style scoped lang="scss">
 
     header{
-        height: 400px;
+        height: 200px;
     }
 
 </style>
