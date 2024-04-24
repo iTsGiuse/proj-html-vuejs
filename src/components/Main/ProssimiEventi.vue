@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="card">
+                    <div class="card ms-3">
                             <img src="../../assets/img/best-places.webp" class="card-img" alt="...">
                             <span class="ms-tag-standard ms-tag-principal ms-tag-principal-left ps-3 pe-3">Lifestyle</span>
                             <span class="ms-tag-standard ms-tag-principal ms-tag-principal-center ps-3 pe-3">Stories</span>
@@ -98,7 +98,12 @@
 
     #prossimi-eventi{
         background-color: $main-color-white;
-        
+
+        .col-6 .card{
+            display: block;
+            width: 95%;
+            
+        }
         .card{
             border: 1px solid transparent !important;
 
@@ -111,7 +116,7 @@
             }  
 
             .card-img-overlay-principal{
-                top: 79% !important;
+                top: 81% !important;
             } 
 
             .card-text{
@@ -143,7 +148,7 @@
         }
 
         .ms-tag-principal{
-            top: 7%;
+            top: 8%;
         }
 
         .ms-tag-principal-center{
@@ -153,7 +158,7 @@
         
 
         .ms-tag-principal-left{
-            left: 35%;
+            left: 34%;
             transform: translate(-50%, -50%);
         }
 
