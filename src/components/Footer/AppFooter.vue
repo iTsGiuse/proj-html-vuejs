@@ -1,12 +1,14 @@
 <script>
     
     import FooterMain from './FooterMain.vue';
+    import Info from './Info.vue';
 
     export default {
         name: 'AppFooter',
 
         components:{
-            FooterMain
+            FooterMain,
+            Info
         }
     }
 
@@ -15,6 +17,7 @@
 <template>
 
     <FooterMain></FooterMain>
+    <Info></Info>
 
 </template>
 
