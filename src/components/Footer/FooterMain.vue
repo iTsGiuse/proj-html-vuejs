@@ -47,9 +47,9 @@
                         <li class="mt-1">Brand Assets</li>
                    </ul> 
                 </div>
-                <div class="col-2 mt-5">
+                <div class="col-4 mt-5">
                    <label class="text-white fs-5">SUBSCRIBE TO NEWSLETTER</label>
-                   <input class="mt-3" type="text" placeholder="Inserisci la tua email">
+                   <input class="mt-3 d-block" type="text" placeholder="Inserisci la tua email">
                    <button class="ms-btn text-white pt-3 pb-3 ps-5 pe-5 mt-3">SUBSCRIBE</button>
                 </div>
             </div>
@@ -75,7 +75,14 @@
           border: 1px solid transparent;
           border-radius: 10px;
           background-color: $main-color-black;  
+          width: 80% ;
         }
+
+        input{
+            width: 80%;
+            height: 30%;
+        }
+
     }
 
    
