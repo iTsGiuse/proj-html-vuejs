@@ -10,7 +10,7 @@
 <template>
 
     <section id="prossimi-eventi-carosello">
-        <div class="container mt-3">
+        <div class="container mt-5">
             <div class="row justify-content-between align-items-center">
                 <div class="col-8">
                     <h3>LIFESTYLE & STORIES</h3>
@@ -21,8 +21,8 @@
                     <button class="filter ps-3 pe-3 pt-1 pb-1">STORIES</button>
                 </div>
             </div>
-            <div class="row mt-2">
-                <div class="col-8">
+            <div class="row mt-4">
+                <div class="col-7">
                     <div class="card">
                         <img src="../../assets/img/success-story.webp" class="card-img" alt="...">
                         <span class="ms-tag-standard ms-tag-standard-principal ps-3 pe-3">Culture</span>
@@ -35,13 +35,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-5">
                     <div class="row border-bottom">
-                        <div class="card mb-4">
+                        <div class="card">
                             <div class="row g-0">
                                 <div class="col-4">
                                     <img src="../../assets/img/travel-alone.webp" class="img-fluid" alt="...">
-                                    <span class="ms-tag-standard ms-tag-standard-small ps-2 pe-2">Stories</span>
+                                    <span class="ms-tag-standard ms-tag-standard-small">Stories</span>
                                 </div>
                                 <div class="col-8">
                                     <div class="card-body">
@@ -56,11 +56,11 @@
                         </div>
                     </div>
                     <div class="row border-bottom mt-3">
-                        <div class="card mb-4">
+                        <div class="card">
                             <div class="row g-0">
                                 <div class="col-4">
                                     <img src="../../assets/img/best-places.webp" class="img-fluid" alt="...">
-                                    <span class="ms-tag-standard ms-tag-standard-small ps-2 pe-2">Lifestyle</span>
+                                    <span class="ms-tag-standard ms-tag-standard-small">Lifestyle</span>
                                 </div>
                                 <div class="col-8">
                                     <div class="card-body">
@@ -75,11 +75,11 @@
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="card mb-4">
+                        <div class="card">
                             <div class="row g-0">
                                 <div class="col-4">
                                     <img src="../../assets/img/music-love.webp" class="img-fluid" alt="...">
-                                    <span class="ms-tag-standard ms-tag-standard-small ps-2 pe-2">Culture</span>
+                                    <span class="ms-tag-standard ms-tag-standard-small">Culture</span>
                                 </div>
                                 <div class="col-8">
                                     <div class="card-body">
@@ -105,7 +105,15 @@
     @use '../../style/partials/variables' as *;
 
     #prossimi-eventi-carosello{
+        overflow-y: hidden;
+        .col-7{
+            padding: 0px;
+        }
 
+        .col-5 .row{
+            height: calc(100% / 3);
+        }
+      
         .filter{
             border: 1px solid transparent;
             border-radius: 10px;
@@ -114,19 +122,14 @@
         }
 
         .card{
-            height: 100% !important;
             border: 1px solid transparent !important;
-
+        
             .card-img, .img-fluid{
                 position: relative;
             }
-            .card-img{
-                height: 100%;
-                object-fit: fill;
-            }
-
+          
             .card-img-overlay{
-                top: 75% !important;
+                top: 83% !important;
                 left: 1% !important;
             }  
 
@@ -136,8 +139,8 @@
             }
 
             .img-fluid{
-                    height: 105% !important;
-                }
+                height: 100% !important;
+            }
             
             .ms-tag-standard{
                 border-radius: 5px;
@@ -146,8 +149,8 @@
                 z-index: 1;
             }
             .ms-tag-standard-small{
-                top: 15%;
-                left: 12%;
+                top: 16%;
+                left: 9%;
                 transform: translate(-50%, -50%);
             }
             .ms-tag-standard-principal{
@@ -156,6 +159,10 @@
                 transform: translate(-50%, -50%);
             }
 
+        }
+
+        .border-bottom{
+                border-bottom: 1px solid black !important;
         }
     }
 </style>

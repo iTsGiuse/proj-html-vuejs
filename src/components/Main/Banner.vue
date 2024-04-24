@@ -31,6 +31,7 @@
             object-fit: cover;
             width: 100%;
             height: 80%;
+            filter: brightness(100%)
         }
     }
 

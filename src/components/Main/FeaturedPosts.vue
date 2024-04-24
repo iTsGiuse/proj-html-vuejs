@@ -130,6 +130,9 @@
         left: 52%;
        }
 
+       img{
+        filter: brightness(100%)
+       }
     }
 
         

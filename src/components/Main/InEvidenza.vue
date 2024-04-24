@@ -9,7 +9,7 @@
 <template>
 
     <section id="in-evidenza">
-        <div class="ms-container">
+        <div class="container-fluid">
             <div class="row pt-3 pb-3 ps-4 pe-4">
                 <div class="col-3">
                     <div class="card">
@@ -76,8 +76,8 @@
             border-radius: 10px;
             background-color: $main-color-white;
             position: absolute;
-            
         }
+
         .ms-tag-center{
             z-index: 1;
             top: 5%;
@@ -126,8 +126,6 @@
             margin-bottom: 2px !important;
         }
 
-
-        
     }
 
 

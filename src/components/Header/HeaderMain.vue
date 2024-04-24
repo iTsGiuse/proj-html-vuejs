@@ -28,4 +28,7 @@
         width: 90% !important;
     }
 
+    img{
+        filter: brightness(100%)
+    }
 </style>

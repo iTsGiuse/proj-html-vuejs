@@ -46,7 +46,6 @@
 
             img{
                 filter: brightness(0%);
-        
             }
         }
         
