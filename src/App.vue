@@ -27,7 +27,28 @@
       Categorie,
       FooterMain,
       Info
-    }
+    },
+
+    data(){
+      return{
+        nav: [],
+      }
+    },
+
+    methods: {
+
+    },
+
+    created() {
+      
+      this.nav = [
+                  { text: 'HOME', icon: '<i class="fa-solid fa-house"></i>' },
+                  { text: 'LIFESTYLE', icon: '<i class="fa-solid fa-suitcase"></i>', menu:'<i class="fa-solid fa-chevron-down"></i>' },
+                  { text: 'STORIES', icon: '<i class="fa-solid fa-book-open-reader"></i>', menu:'<i class="fa-solid fa-chevron-down"></i>' },
+                  { text: 'PAGES', icon: '<i class="fa-solid fa-book"></i>', menu:'<i class="fa-solid fa-chevron-down"></i>' },
+                  { text: 'ABOUT US', icon: '<i class="fa-solid fa-user"></i>'}
+                ];;
+    },
   }
 
 </script>
@@ -37,7 +58,7 @@
   <header>
       <HeaderTop></HeaderTop>
       <HeaderMain></HeaderMain>
-      <HeaderFooter></HeaderFooter>
+      <HeaderFooter :naviga="nav"></HeaderFooter>
   </header>
   <main>
       <InEvidenza></InEvidenza>

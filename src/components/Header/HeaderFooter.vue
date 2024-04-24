@@ -2,6 +2,7 @@
 
     export default {
         name: 'HeaderFooter',
+        props: ['naviga']
     }
 
 </script>
@@ -15,11 +16,7 @@
                 </div>
                 <div class="col-8 d-flex justify-content-center">
                     <ul class="mt-2">
-                        <li> <a href="#"> <i class="fa-solid fa-house"> HOME </i> </a> </li>
-                        <li> <a href="#"> <i class="fa-solid fa-suitcase"> LIFESTYLE <i class="fa-solid fa-chevron-down"></i> </i> </a> </li>
-                        <li> <a href="#"> <i class="fa-solid fa-book-open-reader"> STORIES <i class="fa-solid fa-chevron-down"></i> </i> </a> </li>
-                        <li> <a href="#"> <i class="fa-solid fa-book"> PAGES <i class="fa-solid fa-chevron-down"></i> </i> </a> </li>
-                        <li> <a href="#"> <i class="fa-solid fa-user"> ABOUT US </i> </a> </li>
+                        <li v-for="item in naviga" :key="item"> <a href="#"> <span v-html="item.icon"></span> {{ item.text }} <span v-html="item.menu"></span> </a> </li>
                     </ul>
                 </div>
                 <div class="col-2 text-end">
