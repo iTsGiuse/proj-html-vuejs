@@ -1,2 +1,9 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+img{
+    filter: brightness(60%);
+  }
+
+  i{
+    cursor: pointer;
+  }

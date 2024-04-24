@@ -59,5 +59,4 @@
 
   @use './style/generic' as *;
 
-
 </style>

@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-6">
                     <div class="card">
-                            <img src="../../assets/img/anime-fashion.webp" class="card-img" alt="...">
+                            <img src="../../assets/img/best-places.webp" class="card-img" alt="...">
                             <span class="ms-tag-standard ms-tag-principal ms-tag-principal-left ps-3 pe-3">Lifestyle</span>
                             <span class="ms-tag-standard ms-tag-principal ms-tag-principal-center ps-3 pe-3">Stories</span>
                             <span class="ms-tag-standard ms-tag-principal ms-tag-principal-right ps-3 pe-3">Travel</span>
@@ -104,7 +104,6 @@
 
             .card-img{
                 position: relative;
-
             }
 
             .card-img-overlay{
@@ -161,6 +160,10 @@
         .ms-tag-principal-right{
             left: 64%;
             transform: translate(-50%, -50%);
+        }
+
+        .col-6{
+            padding: 0px !important;
         }
         
     }

@@ -121,7 +121,7 @@
                 position: relative;
             }
             .card-img{
-                height: 368px;
+                height: 100%;
                 object-fit: fill;
             }
 

@@ -42,9 +42,11 @@
             width: 40%;
             height: 100%;
             background-color: $main-color-red;
+            border: 0px solid transparent !important;
 
             img{
-                filter: brightness(200%);
+                filter: brightness(0%);
+        
             }
         }
         

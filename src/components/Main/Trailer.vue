@@ -10,7 +10,7 @@
     <section id="trailer">
         <div class="container mt-5 mb-5">
             <div class="row">
-                <div class="col-8">
+                <div class="col-8 ms-sinistra">
                     <div class="card">
                         <img class="img-principale" src="../../assets/img/default.webp" alt="">
                         <img class="ms-tag-standard ms-tag-logo-channel" src="../../assets/img/channels4_profile.jpg" alt="">
@@ -24,7 +24,7 @@
                         <span class="ms-tag-standard ms-tag-platform text-white"><i class="fa-brands fa-youtube"></i> Youtube</span>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 ms-destra">
                     <div class="row border-bottom justify-content-start align-items-center pt-2 pb-2 sfondo-grigio">
                         <div class="col-2 text-center text-white fs-1">
                             <span><i class="fa-solid fa-play"></i></span>
@@ -131,12 +131,17 @@
 
     #trailer {
 
+        .ms-destra{
+            overflow-y: scroll;
+        }
+
         .col-8{
             padding: 0px !important;
         }
 
         img{
             position: relative;
+            filter: brightness(100%)
         }
 
         img:nth-child(2){
@@ -232,16 +237,21 @@
         }
 
         .quadratino{
+            cursor: pointer;
             border: 1px solid transparent;
             border-radius: 5px;
             background-color: $main-color-black;
             padding: 6px;
             margin-top: 2px;
+
+            &:hover{
+                background-color: $main-color-red;
+                color: $main-color-white;
+            }
         }
 
-        /* .border-bottom{
-            border-bottom: 5px solid black !important
-        } */
+        .border-bottom{
+            border-bottom: 1px solid black !important
+        }
     }
-
 </style>
