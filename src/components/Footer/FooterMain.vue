@@ -14,37 +14,37 @@
                 <div class="col-2 mt-5">
                    <ul class="text-white">
                         <li class="mb-4 fs-5">GET STARTED</li>
-                        <li class="mt-1">Resources</li>
-                        <li class="mt-1">Tutorials</li>
-                        <li class="mt-1">Examples</li>
-                        <li class="mt-1">Docs</li>
+                        <li class="mt-1"><a href="#">Resources</a></li>
+                        <li class="mt-1"><a href="#">Tutorials</a></li>
+                        <li class="mt-1"><a href="#">Examples</a></li>
+                        <li class="mt-1"><a href="#">Docs</a></li>
                    </ul> 
                 </div>
                 <div class="col-2 mt-5">
                    <ul class="text-white">
                         <li class="mb-4 fs-5">ABOUT</li>
-                        <li class="mt-1">Stories</li>
-                        <li class="mt-1">Community</li>
-                        <li class="mt-1">Blog</li>
-                        <li class="mt-1">Brand Assets</li>
+                        <li class="mt-1"><a href="#">Stories</a></li>
+                        <li class="mt-1"><a href="#">Community</a></li>
+                        <li class="mt-1"><a href="#">Blog</a></li>
+                        <li class="mt-1"><a href="#">Brand Assets</a></li>
                    </ul> 
                 </div>
                 <div class="col-2 mt-5">
                    <ul class="text-white">
                         <li class="mb-4 fs-5">Features</li>
-                        <li class="mt-1">Overview</li>
-                        <li class="mt-1">Design</li>
-                        <li class="mt-1">Code</li>
-                        <li class="mt-1">Collaborate</li>
+                        <li class="mt-1"><a href="#">Overview</a></li>
+                        <li class="mt-1"><a href="#">Design</a></li>
+                        <li class="mt-1"><a href="#">Code</a></li>
+                        <li class="mt-1"><a href="#">Collaborate</a></li>
                    </ul> 
                 </div>
                 <div class="col-2 mt-5">
                    <ul class="text-white">
                         <li class="mb-4 fs-5">QUICK LINKS</li>
-                        <li class="mt-1">Stories</li>
-                        <li class="mt-1">Community</li>
-                        <li class="mt-1">Blog</li>
-                        <li class="mt-1">Brand Assets</li>
+                        <li class="mt-1"><a href="#">Stories</a></li>
+                        <li class="mt-1"><a href="#">Community</a></li>
+                        <li class="mt-1"><a href="#">Blog</a></li>
+                        <li class="mt-1"><a href="#">Brand Assets</a></li>
                    </ul> 
                 </div>
                 <div class="col-4 mt-5">
@@ -69,13 +69,27 @@
         ul{
             list-style: none;
             cursor: pointer;
+
+            a{
+                color: $main-color-white;
+                text-decoration: none;
+
+                &:hover{
+                    color: $main-color-black !important;
+                }
+            }
         }
 
         .ms-btn{
           border: 1px solid transparent;
           border-radius: 10px;
           background-color: $main-color-black;  
-          width: 80% ;
+          width: 80%;
+
+            &:hover{
+                background-color: $main-color-white;
+                color: $main-color-red !important;
+            }
         }
 
         input{

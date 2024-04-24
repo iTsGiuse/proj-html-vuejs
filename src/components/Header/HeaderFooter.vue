@@ -31,6 +31,9 @@
 </template>
 
 <style scoped lang="scss">
+    
+    @use '../../style/partials/variables' as *;
+
     .container{
         border-top: 0.1px solid grey;
         border-bottom: 1px solid transparent;
@@ -44,6 +47,10 @@
             a{
                 color: black;
                 text-decoration: none;
+
+                &:hover{
+                    color: $main-color-red !important;
+                }
             }
         }
     }

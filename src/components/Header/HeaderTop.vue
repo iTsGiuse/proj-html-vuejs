@@ -72,16 +72,12 @@
                 background-color: white;
                 color: $main-color-red;
 
+                &:hover{
+                    background-color: $main-color-black;
+                    color: $main-color-white;
+                }
+
             }
-        }
-
-        .scorri {
-            animation: scroll 5s linear infinite;
-        }
-
-        @keyframes scorri{
-            0% { transform: translateX(0%); } 
-            100% { transform: translateX(-100%); }
         }
     }
 

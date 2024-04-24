@@ -89,14 +89,24 @@
             background-color: $main-color-black;
             color: $main-color-white;
             padding: 5px;
+
+            &:hover{
+                background-color: $main-color-red;
+            }
         }
 
        .card-body{
-       background-color: $main-color-grey;
+            background-color: $main-color-grey;
        } 
 
        .btn{
         border-radius: 20px !important;
+        border: 1px solid transparent !important;
+         
+        &:hover{
+            background-color: $main-color-black;
+            color: $main-color-white !important;
+         }
        }
 
        .card-img-top{
