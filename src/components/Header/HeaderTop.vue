@@ -1,7 +1,32 @@
 <script>
-
+    
     export default {
         name: 'HeaderTop',
+
+        methods: {
+            getCurrentTime() {
+                const now = new Date(); 
+                const hours = now.getHours(); 
+                const minutes = now.getMinutes(); 
+                const seconds = now.getSeconds();  
+                
+                const formattedTime = `${hours}:${minutes}`;
+
+                return formattedTime; 
+            },
+
+            updateTime() {
+                const currentTimeElement = document.getElementById('current-time'); 
+                currentTimeElement.textContent = this.getCurrentTime(); 
+            }
+        },
+
+        mounted() {
+
+            this.updateTime(); 
+            
+            setInterval(this.updateTime, 1000);
+        }
     }
 
 </script>
@@ -18,8 +43,8 @@
                         <img src="../../assets/img/default.webp" alt="foto-prova">
                     </div>
                     <div class="text">
-                        <span class="me-2">05.30</span>
-                        <span class="fst-italic">Ciao, benvenuto!</span>
+                        <span id="current-time" class="me-2"></span>
+                        <span class="fst-italic opacity-50">Ciao, benvenuto!</span>
                     </div>
                 </div>
                 <div class="col d-flex flex-end justify-content-end align-items-center">
