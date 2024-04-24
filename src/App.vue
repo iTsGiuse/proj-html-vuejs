@@ -32,6 +32,10 @@
     data(){
       return{
         nav: [],
+        getStarted: [],
+        about: [],
+        feature: [],
+        quickLinks: [],
       }
     },
 
@@ -40,15 +44,25 @@
     },
 
     created() {
-      
+
       this.nav = [
                   { text: 'HOME', icon: '<i class="fa-solid fa-house"></i>' },
                   { text: 'LIFESTYLE', icon: '<i class="fa-solid fa-suitcase"></i>', menu:'<i class="fa-solid fa-chevron-down"></i>' },
                   { text: 'STORIES', icon: '<i class="fa-solid fa-book-open-reader"></i>', menu:'<i class="fa-solid fa-chevron-down"></i>' },
                   { text: 'PAGES', icon: '<i class="fa-solid fa-book"></i>', menu:'<i class="fa-solid fa-chevron-down"></i>' },
                   { text: 'ABOUT US', icon: '<i class="fa-solid fa-user"></i>'}
-                ];;
+                ];
+
+      this.getStarted = ['Resources','Tutorials','Examples','Docs'];
+
+      this.about = ['Stories','Community','Blog','Brand Assets'];
+
+      this.feature = ['Overview','Design','Code','Collaborate'];
+
+      this.quickLinks = ['Stories','Community','Blog','Brand Assets'];
+    
     },
+
   }
 
 </script>
@@ -70,7 +84,7 @@
       <Categorie></Categorie>
   </main>
   <footer>
-    <FooterMain></FooterMain>
+    <FooterMain :start="getStarted" :info="about" :add="feature" :saveTime="quickLinks"></FooterMain>
     <Info></Info>
   </footer>
 

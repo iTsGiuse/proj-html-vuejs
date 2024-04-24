@@ -2,6 +2,7 @@
 
     export default {
         name: 'FooterMain',
+        props: ['start', 'info', 'add', 'saveTime'],
     }
 
 </script>
@@ -14,37 +15,27 @@
                 <div class="col-2 mt-5">
                    <ul class="text-white">
                         <li class="mb-4 fs-5">GET STARTED</li>
-                        <li class="mt-1"><a href="#">Resources</a></li>
-                        <li class="mt-1"><a href="#">Tutorials</a></li>
-                        <li class="mt-1"><a href="#">Examples</a></li>
-                        <li class="mt-1"><a href="#">Docs</a></li>
+                        <li class="mt-1" v-for="item in start" :key="item"><a href="#">{{ item }}</a></li>
                    </ul> 
                 </div>
                 <div class="col-2 mt-5">
                    <ul class="text-white">
                         <li class="mb-4 fs-5">ABOUT</li>
-                        <li class="mt-1"><a href="#">Stories</a></li>
-                        <li class="mt-1"><a href="#">Community</a></li>
-                        <li class="mt-1"><a href="#">Blog</a></li>
-                        <li class="mt-1"><a href="#">Brand Assets</a></li>
+                        <li class="mt-1" v-for="item in info" :key="item"><a href="#">{{ item }}</a></li>
+
                    </ul> 
                 </div>
                 <div class="col-2 mt-5">
                    <ul class="text-white">
                         <li class="mb-4 fs-5">Features</li>
-                        <li class="mt-1"><a href="#">Overview</a></li>
-                        <li class="mt-1"><a href="#">Design</a></li>
-                        <li class="mt-1"><a href="#">Code</a></li>
-                        <li class="mt-1"><a href="#">Collaborate</a></li>
+                        <li class="mt-1" v-for="item in add" :key="item"><a href="#">{{ item }}</a></li>
                    </ul> 
                 </div>
                 <div class="col-2 mt-5">
                    <ul class="text-white">
                         <li class="mb-4 fs-5">QUICK LINKS</li>
-                        <li class="mt-1"><a href="#">Stories</a></li>
-                        <li class="mt-1"><a href="#">Community</a></li>
-                        <li class="mt-1"><a href="#">Blog</a></li>
-                        <li class="mt-1"><a href="#">Brand Assets</a></li>
+                        <li class="mt-1" v-for="item in saveTime" :key="item"><a href="#">{{ item }}</a></li>
+
                    </ul> 
                 </div>
                 <div class="col-4 mt-5">
