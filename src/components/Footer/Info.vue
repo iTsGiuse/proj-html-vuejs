@@ -20,8 +20,8 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="d-flex justify-content-end align-items-center ">
-                        <h5 class="text-white">© AnimeT Tech, Therme by HasnainDEV</h5>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <h5 class="text-white">© Anime Tech, Therme by HasnainDEV</h5>
                     </div>
                 </div>
             </div>

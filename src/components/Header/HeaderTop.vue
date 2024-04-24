@@ -19,12 +19,12 @@
                     </div>
                     <div class="text">
                         <span class="me-2">05.30</span>
-                        <span>Ciao, benvenuto!</span>
+                        <span class="fst-italic">Ciao, benvenuto!</span>
                     </div>
                 </div>
                 <div class="col d-flex flex-end justify-content-end align-items-center">
                     <div class="text">
-                        <span class="me-5"> < </span>
+                        <span class="me-3"> < </span>
                         <span class="me-5"> > </span>
                     </div>
                     <div class="icon">
@@ -71,7 +71,17 @@
                 border-radius: 10px;
                 background-color: white;
                 color: $main-color-red;
+
             }
+        }
+
+        .scorri {
+            animation: scroll 5s linear infinite;
+        }
+
+        @keyframes scorri{
+            0% { transform: translateX(0%); } 
+            100% { transform: translateX(-100%); }
         }
     }
 

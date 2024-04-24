@@ -40,7 +40,6 @@
             display: flex;
             gap: 20px;
             cursor: pointer;
-            font-size: 18px;
             
             a{
                 color: black;

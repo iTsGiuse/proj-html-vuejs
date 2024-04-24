@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-2 mt-5">
                    <ul class="text-white">
-                        <li class="mb-4">GET STARTED</li>
+                        <li class="mb-4 fs-5">GET STARTED</li>
                         <li class="mt-1">Resources</li>
                         <li class="mt-1">Tutorials</li>
                         <li class="mt-1">Examples</li>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-2 mt-5">
                    <ul class="text-white">
-                        <li class="mb-4">ABOUT</li>
+                        <li class="mb-4 fs-5">ABOUT</li>
                         <li class="mt-1">Stories</li>
                         <li class="mt-1">Community</li>
                         <li class="mt-1">Blog</li>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-2 mt-5">
                    <ul class="text-white">
-                        <li class="mb-4">Features</li>
+                        <li class="mb-4 fs-5">Features</li>
                         <li class="mt-1">Overview</li>
                         <li class="mt-1">Design</li>
                         <li class="mt-1">Code</li>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-2 mt-5">
                    <ul class="text-white">
-                        <li class="mb-4">QUICK LINKS</li>
+                        <li class="mb-4 fs-5">QUICK LINKS</li>
                         <li class="mt-1">Stories</li>
                         <li class="mt-1">Community</li>
                         <li class="mt-1">Blog</li>
@@ -84,7 +84,5 @@
         }
 
     }
-
-   
 
 </style>
